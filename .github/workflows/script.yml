@@ -22,5 +22,8 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Running A Python Script
-        run: python main.py
+        run: |
+          pip install pyrogram
+          python telegram/main.py
+          
 
